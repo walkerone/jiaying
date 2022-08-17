@@ -100,11 +100,4 @@ for i in range(1):
     # match_009()
     match_010()
 
-# with open("unit.py","r+",encoding="utf-8") as file1:
-#     with open("unit.py","w+",encoding="utf-8") as file2:
-#         for line in file1:
-#             if len(line.strip())==0:
-#                 continue
-#             else:
-#                 file2.write(line
-#                             )
+
