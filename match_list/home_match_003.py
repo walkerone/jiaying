@@ -24,13 +24,30 @@ def match_001():
 
 
 def match_002():
-    m = random.randint( 200, 500 )
-    n = random.randint( 3, 7 )
+    m = random.randint( 200, 600 )
+    n = random.randint( 4, 9 )
 
-    if "0" in str( m ):
-
+    if "0" not in str( m ):
         print( '{} X {}  =( )'.format( str( m ), str( n ), ) )
 
 
-for i in range( 15 ):
+def match_003():
+    m = random.randint( 30, 100 )
+    n = random.randint( 4, 10 )
+    sum = m * n
+    data = '{} ÷ {} =( )'.format( str( sum ), str( n ) )
+    if "0" not in str( data ):
+        print( data )
+
+
+def match_004():
+    m = random.randint( 1000, 5000 )
+    n = random.randint( 1000, 5000 )
+    data = '{} + {} =( )'.format( str( m ), str( n ) )
+    print( data )
+
+
+for i in range( 3 ):
     match_002()
+    match_003()
+    match_004()
